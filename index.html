@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forecast</title>
+		<meta charset="UTF-8" />
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    
+		<link rel="stylesheet" href="src/styles.css">
+
+		<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+      integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+		></script>
+		
+  </head>
+
+  <body>
+    <div class="container">
+			<div class="row">
+				<div class="col-7">
+			<form id="searchForm">
+				<input type="search" placeholder="Search here your city"
+				id="search-text-input"/>
+			</div>
+			<div class="col-2">
+				<input class="button" type="submit" value="Search"/>
+			</div><div class="col-2">
+				<button id="currentLocationButton"> Current</button>
+			</div>
+			</form></div>
+			<h1>
+
+			</h1>
+			
+			<h4>Date and time</h4>
+
+			<div class="grid">
+				<div class="row">
+					<div class="col-6">
+						<img class="Main-Icon" src = "Icons/Weather.svg" >
+					</div>
+					<div class="col-6">
+					<h2>
+						
+					</h2></div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+						<div class="col-6">
+							<h3>Max 21°</h3>
+							<div class="row">
+								<h3> Min 7°</h3></div>
+						</div>
+						<div class="col-6">
+							<h3> Sun rise at 6:44am</h3>
+							<div class="row">
+								<h3>Sunset at 7:53pm</h3>
+							</div></div>
+						</div>
+					
+
+				<hr>
+
+				<div class="row">
+
+						<div class="col-2">
+							<div class="row">
+									<p>22°</p>
+							</div>
+							<div class="row">
+								<img class="icon" src="Icons/Cloud.svg"></img>
+							</div>
+						<div class="row">
+								<p>9°</p>
+						</div></div>		
+						
+					
+						<div class="col-2">
+							<div class="row"><p>18°</p></div>
+							<div class="row">
+								<img class="icon" src="Icons/Rain-filled.svg"></img>
+							</div>
+							<div class="row"><p> 6°</p></div></div>
+				
+						<div class="col-2">
+									<div class="row"><p>20°</p></div>
+									<div class="row">
+										<img class="icon" src="Icons/Rain-filled.svg"></img>
+									</div>
+									<div class="row"><p> 7°</p></div></div>
+				
+						<div class="col-2">
+											<div class="row"><p>20°</p></div>
+											<div class="row">
+												<img class="icon" src="Icons/Cloud.svg"></img>
+											</div>
+											<div class="row"><p> 10°</p></div></div>
+				
+						<div class="col-2">
+													<div class="row"><p>23°</p></div>
+													<div class="row">
+														<img class="icon" src="Icons/Sun.svg"></img>
+													</div>
+													<div class="row"><p> 12°</p></div></div>
+						<div class="col-2">
+															<div class="row"><p>27°</p></div>
+															<div class="row">
+																<img class="icon" src="Icons/Sun.svg"></img>
+															</div>
+															<div class="row"><p> 15°</p></div></div>
+				
+			</div>
+			
+    </div>
+		
+		
+    <script src="src/index.js"></script>
+  </body>
+</html>
